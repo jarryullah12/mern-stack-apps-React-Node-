@@ -164,7 +164,11 @@ const AppointmentForm = () => {
                 );
               })}
             </select>
+<<<<<<< HEAD
             {/* <select
+=======
+            <select
+>>>>>>> 7c8db2b7a77958d96f0336c5d2de3263748e099b
               value={`${doctorFirstName} ${doctorLastName}`}
               onChange={(e) => {
                 const [firstName, lastName] = e.target.value.split(" ");
@@ -184,6 +188,7 @@ const AppointmentForm = () => {
                     {doctor.firstName} {doctor.lastName}
                   </option>
                 ))}
+<<<<<<< HEAD
             </select> */}
             <select
               value={JSON.stringify({
@@ -211,6 +216,8 @@ const AppointmentForm = () => {
                     {doctor.firstName} {doctor.lastName}
                   </option>
                 ))}
+=======
+>>>>>>> 7c8db2b7a77958d96f0336c5d2de3263748e099b
             </select>
           </div>
           <textarea

@@ -1,10 +1,14 @@
 import React, { useContext, useEffect } from "react";
+<<<<<<< HEAD
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
+=======
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+>>>>>>> 7c8db2b7a77958d96f0336c5d2de3263748e099b
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import AddNewDoctor from "./components/AddNewDoctor";

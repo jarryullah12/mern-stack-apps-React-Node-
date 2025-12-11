@@ -1,2 +1,6 @@
 node_modules
+<<<<<<< HEAD
 backend/config.env
+=======
+# backend/config.env
+>>>>>>> 7c8db2b7a77958d96f0336c5d2de3263748e099b

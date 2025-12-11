@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useContext, useEffect } from "react";
+=======
+import React, { useContext, useEffect, useState } from "react";
+>>>>>>> 7c8db2b7a77958d96f0336c5d2de3263748e099b
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -12,9 +16,17 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { Context } from "./main";
 import Login from "./Pages/Login";
+<<<<<<< HEAD
 const App = () => {
   const { isAuthenticated, setIsAuthenticated, setUser } =
     useContext(Context);
+=======
+
+const App = () => {
+  const { isAuthenticated, setIsAuthenticated, setUser } =
+    useContext(Context);
+  const [user, setUserState] = useState({});
+>>>>>>> 7c8db2b7a77958d96f0336c5d2de3263748e099b
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -26,10 +38,17 @@ const App = () => {
           }
         );
         setIsAuthenticated(true);
+<<<<<<< HEAD
         setUser(response.data.user);
       } catch (error) {
         setIsAuthenticated(false);
         setUser({});
+=======
+        setUserState(response.data.user);
+      } catch (error) {
+        setIsAuthenticated(false);
+        setUserState({});
+>>>>>>> 7c8db2b7a77958d96f0336c5d2de3263748e099b
       }
     };
     fetchUser();
@@ -38,7 +57,11 @@ const App = () => {
   return (
     <>
       <Router>
+<<<<<<< HEAD
         <Navbar />
+=======
+        <Navbar user={user} />
+>>>>>>> 7c8db2b7a77958d96f0336c5d2de3263748e099b
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/appointment" element={<Appointment />} />
@@ -54,3 +77,7 @@ const App = () => {
 };
 
 export default App;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7c8db2b7a77958d96f0336c5d2de3263748e099b
